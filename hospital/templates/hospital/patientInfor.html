@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Patient Information</title>
+</head>
+
+<body>
+    {% if patient.count == 0 %}
+    <p>No patients yet.</p>
+    {% else %}
+    <ul>
+        {% for t in patients %}
+        <li>{{t}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>

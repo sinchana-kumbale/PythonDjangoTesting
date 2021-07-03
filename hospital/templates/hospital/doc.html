@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Please Enter Your Information</h2>
+
+<form action="/doctor/" method="post">
+  <label for="name">Enter your Name:</label><br>
+  <input type="text" id="name" name="name" value="Your Name"><br>
+  {% csrf_token %}
+  <input type="submit" id="submit" value="Submit">
+ </form>
+
+</body>
+</html>
