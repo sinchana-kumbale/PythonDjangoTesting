@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class TransactionConfig(AppConfig):
-    name = 'transaction'
+class HospitalConfig(AppConfig):
+    name = 'hospital'
