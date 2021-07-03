@@ -15,9 +15,10 @@ class Migration(migrations.Migration):
             name='Transaction',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('product_code', models.CharField(max_length=200)),
-                ('quantity', models.IntegerField(default=0)),
-                ('price', models.FloatField(default=0)),
+                ('patient_name', models.CharField(max_length=200)),
+                ('patient_age', models.IntegerField(default=0)),
+                ('Issue', models.CharField(max_length=500)),
+                ('doctor_name', models.CharField(max_length=500)),
             ],
         ),
     ]
